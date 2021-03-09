@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url(img/bg.png);
+}
+
+.header {
+    background-image: url(img/header_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 790px;
+    background-color: #6D010C;
+
+    .menu {
+        display: flex;
+        background-color: #000;
+        opacity: 0.65;
+        width: 100%;
+        padding: 0 315px;
+        margin-bottom: 60px;
+    
+    
+        .menu_list {  
+            display: flex;
+            list-style-type: none;
+            padding: 40px 0;
+            margin: 0 auto;
+
+            .menu_link {
+                padding-left: 68px;
+                            
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .header_content {
+        display: flex;
+        padding-left: 315px;
+        padding-right: 315px;
+        justify-content: space-between;
+        align-items: center;
+
+        .header_h1 {
+            font-family: Exo;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 56px;
+            line-height: 120%;
+            color: #FFFFFF;
+            width: 630px;
+        }
+    
+        .header_h2 {
+            font-family: 'Exo', sans-serif;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 45px;
+            color: #FFFFFF;
+            background-color: #6D010C;
+            width: 330px;
+            text-align: center;
+        }
+
+        
+
+        .header_form {
+            max-width: 393px;
+
+            .form_h4 {
+                font-family: Exo;
+                font-style: italic;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: center;
+                color: #737373;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                background: #FFFFFF;
+                box-shadow: 0px 3.29341px 41.1676px rgba(86, 91, 97, 0.1);
+                border-radius: 20px;
+                padding: 26px 36px;
+
+                .input {
+                    padding: 18px 14px;
+                    margin-top: 12px;
+                    background-color: #F8F8F8;
+                    border-radius: 5px;
+                    border-width: 0;
+                }
+
+                .form_btn {
+                    background: #6D010C;
+                    padding: 20px;
+                    margin-top: 20px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    text-transform: uppercase;
+                    border-radius: 5px;
+                    border-width: 0;
+                }
+
+                .accept {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 auto;
+                    padding-top: 24px;
+
+                    .pp_link {
+                        font-size: 11px;
+                        line-height: 150%;
+                        color: #737373;
+                        text-decoration: none;
+                    }
+
+                    .accept_text {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content {
+    padding-left: 315px;
+    padding-right: 315px;
+    margin-top: 70px;
+
+    .types_of_trucks {
+        margin-bottom: 77px;
+
+        h2 {
+        font-family: 'Exo', sans-serif;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 120%;
+        color: #FFFFFF;
+        margin-bottom: 60px;
+    }
+
+    .truck_box {
+        display: flex;
+        justify-content: space-between;
+
+        .truck {
+            max-width: 410px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+    
+            .logo_1 {
+                position: absolute;
+                left: 184px;
+                top: 20px;
+            }
+
+            .logo_2 {
+                position: absolute;
+                left: 184px;
+                top: 13px;
+            }
+
+            .logo_3 {
+                position: absolute;
+                left: 184px;
+                top: 18px;
+            }
+    
+            .ellipse {
+                align-self: center;
+                margin-bottom: -40px;
+            }
+    
+            h3 {
+                font-size: 28px;
+                line-height: 120%;
+                color: #FFFFFF;
+                padding-top: 20px;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 150%;
+                color: #FFFFFF;
+                padding-top: 14px;
+            }
+        }
+    }
+    }
+
+    .we_offer {
+        background-color: #FFFFFF;
+        background-image: url(img/home_electric_texture.svg);
+        background-repeat: no-repeat;
+        width: 1920px;
+        margin-left: -315px;
+        padding: 100px 315px;
+    
+        h2 {
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 120%;
+            color: #6D010C;
+            margin-bottom: 30px;
+        }
+    
+        p {
+            font-size: 24px;
+            line-height: 140%;
+            color: #737373;
+        }
+    
+        .offer_cards {
+            display: flex;
+            padding-top: 54px;
+            width: 1290px;
+            justify-content: space-between;
+    
+            .offer_card {
+                max-width: 234px;
+    
+                h3 {
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 120%;
+                    color: #6D010C;
+                    margin-bottom: 12px;
+                }
+    
+                p {
+                    font-size: 13px;
+                    line-height: 150%;
+                    color: #737373;
+                    margin-bottom: 12px;
+                }
+    
+                a {
+                    font-size: 13px;
+                    line-height: 150%;
+                    color: #276DD7;
+                    text-decoration: none;
+                }
+    
+                img {
+                    margin-bottom: 22px;
+                }
+            }
+        }
+    }
+
+    .reviews {
+        background-color: #F5F5F5;
+        background-image: url(img/home_electric_texture.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position: 1300px;
+        background-size: 800px;
+        width: 1920px;
+        margin-left: -315px;
+        padding: 80px 0 80px 315px;
+        display: flex;
+    
+        img {
+            margin-left: 46px;
+        }
+    
+        h2 {
+            font-size: 24px;
+            line-height: 120%;
+            color: #6D010C;
+            margin-bottom: 31px;
+        }
+    
+        p {
+            font-size: 16px;
+            line-height: 150%;
+            color: #737373;
+        }
+    
+        .name {
+            font-size: 13px;
+            line-height: 150%;
+            color: #A8A8A8;
+            margin-top: 11px;
+            display: flex;
+            list-style-type: none;
+        }
+    
+        .name::before {
+            content: url(img/user.svg);
+            margin-right: 7px;
+        }
+    
+        .we_are_best {
+            max-width: 350px;
+        }
+    
+        .clients_reviews {
+            max-width: 330px;
+            margin-left: 90px;
+            padding-left: 17px;
+    
+            h2 {
+                margin-left: -17px;
+            }
+    
+            p {
+                margin-top: 31px;
+            }
+        }
+    
+        .review_1 {
+            position: relative;
+            z-index: 2;
+            img {
+                position: absolute;
+                z-index: -1;
+                top: -13px;
+                left: -65px;
+            }
+        }
+    
+        .review_2 {
+            position: relative;
+            z-index: 2;
+            img {
+                position: absolute;
+                z-index: -1;
+                top: -13px;
+                left: -65px;
+            }
+        }
+    }
+}   
+
+.footer {
+
+    .telephone {
+        background-color: #6D010C;
+        width: 1920px;
+        height: 140px;
+        display: flex;
+        padding-left: 315px;
+        align-items: center;
+    
+        h2 {
+            font-family: 'Exo';
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 120%;
+            color: #FFFFFF;
+        }
+    
+        a {
+            font-family: 'Exo';
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 120%;
+            color: #FFFFFF;
+            text-decoration: none;
+            margin-left: 80px;
+        }
+    
+        .fb {
+            margin-left: 326px;
+        }
+    
+        .tel::before {
+            content: url(img/phone_red.svg);
+            margin-right: 11px;
+        }
+    
+        .tel_button {
+            font-size: 14px;
+            font-weight: 120%;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background-color: #590000;
+            padding: 12px 18px;
+            border-radius: 5px;
+        }
+    }
+
+    .footer_content {
+        display: flex;
+        justify-content: space-between;
+        padding: 63px 315px 59px;
+
+        h3 {
+            font-family: 'Exo';
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 120%;
+            color: #A60012;
+            margin-bottom: 18px;
+        }
+
+        p {
+            font-style: italic;
+            font-size: 13px;
+            line-height: 170%;
+            color: #9B9B9B;
+        }
+
+        span {
+            color: #276DD7;
+        }
+
+        div {
+            max-width: 330px;
+
+            img {
+                margin-right: 15px;
+            }
+
+            ul {
+                list-style-type: none;
+
+                a {
+                    font-style: italic;
+                    font-size: 13px;
+                    line-height: 170%;
+                    color: #9B9B9B;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .rights {
+        padding: 8px;
+        p {
+            font-style: italic;
+            font-size: 13px;
+            line-height: 170%;
+            text-align: center;
+            color: #999999;
+
+            a{
+                text-decoration: none;
+                color: #276DD7;
+            }
+        }
+    }
+}
