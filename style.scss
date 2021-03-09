@@ -14,8 +14,7 @@ body {
     background-image: url(img/bg.png);
 }
 
-.header {
-    background-image: url(img/header_bg.png);
+.index_header {
     background-size: 100%;
     background-repeat: no-repeat;
     height: 790px;
@@ -138,6 +137,57 @@ body {
                     }
                 }
             }
+        }
+    }
+}
+
+.header {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 330px;
+    background-color: #6D010C;
+
+    .menu {
+        display: flex;
+        background-color: #000;
+        opacity: 0.65;
+        width: 100%;
+        padding: 0 315px;
+        margin-bottom: 60px;
+    
+    
+        .menu_list {  
+            display: flex;
+            list-style-type: none;
+            padding: 40px 0;
+            margin: 0 auto;
+
+            .menu_link {
+                padding-left: 68px;
+                            
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .header_content {
+        display: flex;
+        padding-left: 315px;
+        padding-right: 315px;
+        justify-content: space-between;
+        align-items: center;
+
+        .header_h3 {
+            font-family: Exo;
+            font-weight: 500;
+            font-size: 53px;
+            line-height: 120%;
+            color: #6D010C;
         }
     }
 }
