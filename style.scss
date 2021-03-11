@@ -236,12 +236,13 @@ body {
         margin-bottom: 77px;
 
         h2 {
-        font-family: 'Exo', sans-serif;
-        font-weight: bold;
-        font-size: 34px;
-        line-height: 120%;
-        color: #FFFFFF;
-        margin-bottom: 60px;
+            font-family: 'Exo', sans-serif;
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 120%;
+            color: #FFFFFF;
+            margin-bottom: 60px;
+        }
     }
 
     .truck_box {
@@ -278,6 +279,8 @@ body {
             }
     
             h3 {
+                font-family: Exo;
+                font-weight: 300;
                 font-size: 28px;
                 line-height: 120%;
                 color: #FFFFFF;
@@ -291,7 +294,6 @@ body {
                 padding-top: 14px;
             }
         }
-    }
     }
 
     .we_offer {
@@ -418,6 +420,7 @@ body {
         .review_1 {
             position: relative;
             z-index: 2;
+
             img {
                 position: absolute;
                 z-index: -1;
@@ -429,6 +432,7 @@ body {
         .review_2 {
             position: relative;
             z-index: 2;
+
             img {
                 position: absolute;
                 z-index: -1;
@@ -437,7 +441,7 @@ body {
             }
         }
     }
-}   
+}
 
 .content {
     background-color: #F5F5F5;
@@ -572,6 +576,7 @@ body {
 
     .rights {
         padding: 8px;
+        
         p {
             font-style: italic;
             font-size: 13px;

@@ -274,7 +274,7 @@ body {
   margin-bottom: 60px;
 }
 
-.index_content .types_of_trucks .truck_box {
+.index_content .truck_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,7 +283,7 @@ body {
           justify-content: space-between;
 }
 
-.index_content .types_of_trucks .truck_box .truck {
+.index_content .truck_box .truck {
   max-width: 410px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,39 +295,41 @@ body {
   position: relative;
 }
 
-.index_content .types_of_trucks .truck_box .truck .logo_1 {
+.index_content .truck_box .truck .logo_1 {
   position: absolute;
   left: 184px;
   top: 20px;
 }
 
-.index_content .types_of_trucks .truck_box .truck .logo_2 {
+.index_content .truck_box .truck .logo_2 {
   position: absolute;
   left: 184px;
   top: 13px;
 }
 
-.index_content .types_of_trucks .truck_box .truck .logo_3 {
+.index_content .truck_box .truck .logo_3 {
   position: absolute;
   left: 184px;
   top: 18px;
 }
 
-.index_content .types_of_trucks .truck_box .truck .ellipse {
+.index_content .truck_box .truck .ellipse {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   margin-bottom: -40px;
 }
 
-.index_content .types_of_trucks .truck_box .truck h3 {
+.index_content .truck_box .truck h3 {
+  font-family: Exo;
+  font-weight: 300;
   font-size: 28px;
   line-height: 120%;
   color: #FFFFFF;
   padding-top: 20px;
 }
 
-.index_content .types_of_trucks .truck_box .truck p {
+.index_content .truck_box .truck p {
   font-size: 16px;
   line-height: 150%;
   color: #FFFFFF;
