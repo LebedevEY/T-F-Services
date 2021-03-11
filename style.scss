@@ -142,6 +142,7 @@ body {
 }
 
 .header {
+    background-image: url(img/Secondary/BG.png);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 330px;
@@ -153,7 +154,6 @@ body {
         opacity: 0.65;
         width: 100%;
         padding: 0 315px;
-        margin-bottom: 60px;
     
     
         .menu_list {  
@@ -175,24 +175,59 @@ body {
         }
     }
 
-    .header_content {
-        display: flex;
+    h1 {
+        font-family: Exo;
+        font-weight: 500;
+        font-size: 53px;
+        line-height: 120%;
+        color: #6D010C;
         padding-left: 315px;
-        padding-right: 315px;
-        justify-content: space-between;
-        align-items: center;
+        padding-top: 80px;
+        align-self: center;
+    }    
+}
 
-        .header_h3 {
-            font-family: Exo;
-            font-weight: 500;
-            font-size: 53px;
+.offer_cards {
+    display: flex;
+    padding: 73px 315px 81px;
+    width: 1920px;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+
+    .offer_card {
+        max-width: 234px;
+
+        h3 {
+            font-weight: 300;
+            font-size: 18px;
             line-height: 120%;
             color: #6D010C;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 13px;
+            line-height: 150%;
+            color: #737373;
+            margin-bottom: 12px;
+        }
+
+        a {
+            font-size: 13px;
+            line-height: 150%;
+            color: #276DD7;
+            text-decoration: none;
+        }
+
+        img {
+            margin-bottom: 22px;
         }
     }
 }
 
-.content {
+.index_content {
     padding-left: 315px;
     padding-right: 315px;
     margin-top: 70px;
@@ -280,8 +315,8 @@ body {
             line-height: 140%;
             color: #737373;
         }
-    
-        .offer_cards {
+
+        .index_offer_cards {
             display: flex;
             padding-top: 54px;
             width: 1290px;
@@ -403,6 +438,41 @@ body {
         }
     }
 }   
+
+.content {
+    background-color: #F5F5F5;
+    padding: 52px 315px 88px;
+
+    h2 {
+        font-family: Exo;
+        font-size: 42px;
+        line-height: 120%;
+        text-align: center;
+        color: #6D010C;
+        margin-bottom: 54px;
+    }
+
+    p {
+        font-family: Roboto;
+        font-size: 13px;
+        line-height: 150%;
+        color: #737373;
+    }
+
+    .text_container {
+        display: flex;
+
+        .text {
+            max-width: 630px;
+        }
+    }
+}
+
+.image {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
 
 .footer {
 

@@ -160,6 +160,7 @@ body {
 }
 
 .header {
+  background-image: url(img/Secondary/BG.png);
   background-size: 100%;
   background-repeat: no-repeat;
   height: 330px;
@@ -174,7 +175,6 @@ body {
   opacity: 0.65;
   width: 100%;
   padding: 0 315px;
-  margin-bottom: 60px;
 }
 
 .header .menu .menu_list {
@@ -197,39 +197,75 @@ body {
   color: #FFFFFF;
 }
 
-.header .header_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 315px;
-  padding-right: 315px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header .header_content .header_h3 {
+.header h1 {
   font-family: Exo;
   font-weight: 500;
   font-size: 53px;
   line-height: 120%;
   color: #6D010C;
+  padding-left: 315px;
+  padding-top: 80px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.content {
+.offer_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 73px 315px 81px;
+  width: 1920px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.offer_cards .offer_card {
+  max-width: 234px;
+}
+
+.offer_cards .offer_card h3 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 120%;
+  color: #6D010C;
+  margin-bottom: 12px;
+}
+
+.offer_cards .offer_card p {
+  font-size: 13px;
+  line-height: 150%;
+  color: #737373;
+  margin-bottom: 12px;
+}
+
+.offer_cards .offer_card a {
+  font-size: 13px;
+  line-height: 150%;
+  color: #276DD7;
+  text-decoration: none;
+}
+
+.offer_cards .offer_card img {
+  margin-bottom: 22px;
+}
+
+.index_content {
   padding-left: 315px;
   padding-right: 315px;
   margin-top: 70px;
 }
 
-.content .types_of_trucks {
+.index_content .types_of_trucks {
   margin-bottom: 77px;
 }
 
-.content .types_of_trucks h2 {
+.index_content .types_of_trucks h2 {
   font-family: 'Exo', sans-serif;
   font-weight: bold;
   font-size: 34px;
@@ -238,7 +274,7 @@ body {
   margin-bottom: 60px;
 }
 
-.content .types_of_trucks .truck_box {
+.index_content .types_of_trucks .truck_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,7 +283,7 @@ body {
           justify-content: space-between;
 }
 
-.content .types_of_trucks .truck_box .truck {
+.index_content .types_of_trucks .truck_box .truck {
   max-width: 410px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,46 +295,46 @@ body {
   position: relative;
 }
 
-.content .types_of_trucks .truck_box .truck .logo_1 {
+.index_content .types_of_trucks .truck_box .truck .logo_1 {
   position: absolute;
   left: 184px;
   top: 20px;
 }
 
-.content .types_of_trucks .truck_box .truck .logo_2 {
+.index_content .types_of_trucks .truck_box .truck .logo_2 {
   position: absolute;
   left: 184px;
   top: 13px;
 }
 
-.content .types_of_trucks .truck_box .truck .logo_3 {
+.index_content .types_of_trucks .truck_box .truck .logo_3 {
   position: absolute;
   left: 184px;
   top: 18px;
 }
 
-.content .types_of_trucks .truck_box .truck .ellipse {
+.index_content .types_of_trucks .truck_box .truck .ellipse {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   margin-bottom: -40px;
 }
 
-.content .types_of_trucks .truck_box .truck h3 {
+.index_content .types_of_trucks .truck_box .truck h3 {
   font-size: 28px;
   line-height: 120%;
   color: #FFFFFF;
   padding-top: 20px;
 }
 
-.content .types_of_trucks .truck_box .truck p {
+.index_content .types_of_trucks .truck_box .truck p {
   font-size: 16px;
   line-height: 150%;
   color: #FFFFFF;
   padding-top: 14px;
 }
 
-.content .we_offer {
+.index_content .we_offer {
   background-color: #FFFFFF;
   background-image: url(img/home_electric_texture.svg);
   background-repeat: no-repeat;
@@ -307,7 +343,7 @@ body {
   padding: 100px 315px;
 }
 
-.content .we_offer h2 {
+.index_content .we_offer h2 {
   font-weight: bold;
   font-size: 34px;
   line-height: 120%;
@@ -315,13 +351,13 @@ body {
   margin-bottom: 30px;
 }
 
-.content .we_offer p {
+.index_content .we_offer p {
   font-size: 24px;
   line-height: 140%;
   color: #737373;
 }
 
-.content .we_offer .offer_cards {
+.index_content .we_offer .index_offer_cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,11 +368,11 @@ body {
           justify-content: space-between;
 }
 
-.content .we_offer .offer_cards .offer_card {
+.index_content .we_offer .index_offer_cards .offer_card {
   max-width: 234px;
 }
 
-.content .we_offer .offer_cards .offer_card h3 {
+.index_content .we_offer .index_offer_cards .offer_card h3 {
   font-weight: 300;
   font-size: 18px;
   line-height: 120%;
@@ -344,25 +380,25 @@ body {
   margin-bottom: 12px;
 }
 
-.content .we_offer .offer_cards .offer_card p {
+.index_content .we_offer .index_offer_cards .offer_card p {
   font-size: 13px;
   line-height: 150%;
   color: #737373;
   margin-bottom: 12px;
 }
 
-.content .we_offer .offer_cards .offer_card a {
+.index_content .we_offer .index_offer_cards .offer_card a {
   font-size: 13px;
   line-height: 150%;
   color: #276DD7;
   text-decoration: none;
 }
 
-.content .we_offer .offer_cards .offer_card img {
+.index_content .we_offer .index_offer_cards .offer_card img {
   margin-bottom: 22px;
 }
 
-.content .reviews {
+.index_content .reviews {
   background-color: #F5F5F5;
   background-image: url(img/home_electric_texture.svg);
   background-repeat: no-repeat;
@@ -377,24 +413,24 @@ body {
   display: flex;
 }
 
-.content .reviews img {
+.index_content .reviews img {
   margin-left: 46px;
 }
 
-.content .reviews h2 {
+.index_content .reviews h2 {
   font-size: 24px;
   line-height: 120%;
   color: #6D010C;
   margin-bottom: 31px;
 }
 
-.content .reviews p {
+.index_content .reviews p {
   font-size: 16px;
   line-height: 150%;
   color: #737373;
 }
 
-.content .reviews .name {
+.index_content .reviews .name {
   font-size: 13px;
   line-height: 150%;
   color: #A8A8A8;
@@ -405,51 +441,92 @@ body {
   list-style-type: none;
 }
 
-.content .reviews .name::before {
+.index_content .reviews .name::before {
   content: url(img/user.svg);
   margin-right: 7px;
 }
 
-.content .reviews .we_are_best {
+.index_content .reviews .we_are_best {
   max-width: 350px;
 }
 
-.content .reviews .clients_reviews {
+.index_content .reviews .clients_reviews {
   max-width: 330px;
   margin-left: 90px;
   padding-left: 17px;
 }
 
-.content .reviews .clients_reviews h2 {
+.index_content .reviews .clients_reviews h2 {
   margin-left: -17px;
 }
 
-.content .reviews .clients_reviews p {
+.index_content .reviews .clients_reviews p {
   margin-top: 31px;
 }
 
-.content .reviews .review_1 {
+.index_content .reviews .review_1 {
   position: relative;
   z-index: 2;
 }
 
-.content .reviews .review_1 img {
+.index_content .reviews .review_1 img {
   position: absolute;
   z-index: -1;
   top: -13px;
   left: -65px;
 }
 
-.content .reviews .review_2 {
+.index_content .reviews .review_2 {
   position: relative;
   z-index: 2;
 }
 
-.content .reviews .review_2 img {
+.index_content .reviews .review_2 img {
   position: absolute;
   z-index: -1;
   top: -13px;
   left: -65px;
+}
+
+.content {
+  background-color: #F5F5F5;
+  padding: 52px 315px 88px;
+}
+
+.content h2 {
+  font-family: Exo;
+  font-size: 42px;
+  line-height: 120%;
+  text-align: center;
+  color: #6D010C;
+  margin-bottom: 54px;
+}
+
+.content p {
+  font-family: Roboto;
+  font-size: 13px;
+  line-height: 150%;
+  color: #737373;
+}
+
+.content .text_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .text_container .text {
+  max-width: 630px;
+}
+
+.image {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer .telephone {
