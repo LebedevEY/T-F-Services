@@ -155,12 +155,32 @@ body {
         width: 100%;
         padding: 0 315px;
     
-    
+        ul li:hover .sub_menu {
+            display: block;
+            width: 200px;
+        }
+
         .menu_list {  
             display: flex;
             list-style-type: none;
             padding: 40px 0;
             margin: 0 auto;
+            position: relative;
+
+            .sub_menu {
+                display: none;
+                background: #F0EFED;
+                position: absolute;
+                list-style-type: none;
+
+                .sub_menu_link {
+                    padding-left: 10px;
+
+                    a {
+                        color: #737373;;
+                    }
+                }
+            }
 
             .menu_link {
                 padding-left: 68px;

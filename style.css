@@ -177,6 +177,11 @@ body {
   padding: 0 315px;
 }
 
+.header .menu ul li:hover .sub_menu {
+  display: block;
+  width: 200px;
+}
+
 .header .menu .menu_list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,6 +189,22 @@ body {
   list-style-type: none;
   padding: 40px 0;
   margin: 0 auto;
+  position: relative;
+}
+
+.header .menu .menu_list .sub_menu {
+  display: none;
+  background: #F0EFED;
+  position: absolute;
+  list-style-type: none;
+}
+
+.header .menu .menu_list .sub_menu .sub_menu_link {
+  padding-left: 10px;
+}
+
+.header .menu .menu_list .sub_menu .sub_menu_link a {
+  color: #737373;
 }
 
 .header .menu .menu_list .menu_link {
