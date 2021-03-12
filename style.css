@@ -265,7 +265,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 73px 315px 81px;
-  width: 1920px;
+  max-width: 1920px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -306,12 +306,12 @@ body {
 }
 
 .index_content {
-  padding-left: 315px;
-  padding-right: 315px;
   margin-top: 70px;
 }
 
 .index_content .types_of_trucks {
+  max-width: 1290px;
+  margin: 0 auto;
   margin-bottom: 77px;
 }
 
@@ -387,11 +387,10 @@ body {
 }
 
 .index_content .we_offer {
-  background-color: #FFFFFF;
+  background: #FFFFFF;
   background-image: url(img/home_electric_texture.svg);
   background-repeat: no-repeat;
-  width: 1920px;
-  margin-left: -315px;
+  width: 100%;
   padding: 100px 315px;
 }
 
@@ -414,7 +413,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding-top: 54px;
-  width: 1290px;
+  max-width: 1290px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -457,8 +456,7 @@ body {
   background-position: right;
   background-position: 1300px;
   background-size: 800px;
-  width: 1920px;
-  margin-left: -315px;
+  max-width: 1920px;
   padding: 80px 0 80px 315px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,7 +581,7 @@ body {
 
 .footer .telephone {
   background-color: #6D010C;
-  width: 1920px;
+  max-width: 1920px;
   height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
