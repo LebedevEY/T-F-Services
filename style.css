@@ -16,7 +16,7 @@ body {
 
 .index_header {
   background-image: url(img/header_bg.png);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   max-height: 790px;
 }
@@ -52,6 +52,7 @@ body {
   position: absolute;
   list-style-type: none;
   left: 400px;
+  z-index: 10;
 }
 
 .index_header .menu .menu_list .sub_menu .sub_menu_link {
@@ -180,126 +181,6 @@ body {
 
 .index_header .header_content .header_form form .accept .accept_text {
   padding-left: 10px;
-}
-
-.header {
-  background-image: url(img/Secondary/BG.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 330px;
-  background-color: #6D010C;
-}
-
-.header .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #000;
-  opacity: 0.65;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.header .menu ul li:hover .sub_menu {
-  display: block;
-}
-
-.header .menu .menu_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  padding: 40px 0;
-  position: relative;
-}
-
-.header .menu .menu_list .sub_menu {
-  display: none;
-  width: 200px;
-  background: #F0EFED;
-  position: absolute;
-  list-style-type: none;
-  left: 400px;
-}
-
-.header .menu .menu_list .sub_menu .sub_menu_link {
-  padding: 13px 20px;
-  border: 1px solid #E4E3E2;
-}
-
-.header .menu .menu_list .sub_menu .sub_menu_link a {
-  font-size: 13px;
-  line-height: 15px;
-  color: black;
-}
-
-.header .menu .menu_list .menu_link {
-  padding-left: 68px;
-}
-
-.header .menu .menu_list .menu_link a {
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFFFFF;
-}
-
-.header h1 {
-  font-family: Exo;
-  font-weight: 500;
-  font-size: 53px;
-  line-height: 120%;
-  color: #6D010C;
-  padding-left: 315px;
-  padding-top: 80px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.offer_cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 73px 315px 81px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 auto;
-  background-color: #FFFFFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.offer_cards .offer_card {
-  max-width: 234px;
-}
-
-.offer_cards .offer_card h3 {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 120%;
-  color: #6D010C;
-  margin-bottom: 12px;
-}
-
-.offer_cards .offer_card p {
-  font-size: 13px;
-  line-height: 150%;
-  color: #737373;
-  margin-bottom: 12px;
-}
-
-.offer_cards .offer_card a {
-  font-size: 13px;
-  line-height: 150%;
-  color: #276DD7;
-  text-decoration: none;
-}
-
-.offer_cards .offer_card img {
-  margin-bottom: 22px;
 }
 
 .index_content {
@@ -453,7 +334,7 @@ body {
 
 .index_content .reviews_container {
   background-color: #F5F5F5;
-  background-image: url(img/home_electric_texture.svg);
+  background-image: url(img/home_electric_texture_3.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 800px;
@@ -549,12 +430,139 @@ body {
   left: -20px;
 }
 
-.index_content .content {
+.header {
+  background-image: url(img/Secondary/BG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 330px;
+  background-color: #6D010C;
+  position: relative;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+  opacity: 0.65;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .menu ul li:hover .sub_menu {
+  display: block;
+}
+
+.header .menu .menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 40px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.header .menu .menu_list .sub_menu {
+  display: none;
+  width: 200px;
+  background: #F0EFED;
+  position: absolute;
+  list-style-type: none;
+  left: 400px;
+  z-index: 10;
+}
+
+.header .menu .menu_list .sub_menu .sub_menu_link {
+  padding: 13px 20px;
+  border: 1px solid #E4E3E2;
+  z-index: 10;
+}
+
+.header .menu .menu_list .sub_menu .sub_menu_link a {
+  font-size: 13px;
+  line-height: 15px;
+  color: black;
+}
+
+.header .menu .menu_list .menu_link {
+  padding-left: 68px;
+}
+
+.header .menu .menu_list .menu_link a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.header h1 {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 53px;
+  line-height: 120%;
+  color: #6D010C;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  z-index: 1;
+}
+
+.offer_cards {
+  padding: 73px 0 81px;
+  background-color: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.offer_cards .offer_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1290px;
+}
+
+.offer_cards .offer_content .offer_card {
+  max-width: 234px;
+}
+
+.offer_cards .offer_content .offer_card h3 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 120%;
+  color: #6D010C;
+  margin-bottom: 12px;
+}
+
+.offer_cards .offer_content .offer_card p {
+  font-size: 13px;
+  line-height: 150%;
+  color: #737373;
+  margin-bottom: 12px;
+}
+
+.offer_cards .offer_content .offer_card a {
+  font-size: 13px;
+  line-height: 150%;
+  color: #276DD7;
+  text-decoration: none;
+}
+
+.offer_cards .offer_content .offer_card img {
+  margin-bottom: 22px;
+}
+
+.content {
   background-color: #F5F5F5;
   padding: 52px 300px 88px;
 }
 
-.index_content .content h2 {
+.content h2 {
   font-family: Exo;
   font-size: 42px;
   line-height: 120%;
@@ -563,20 +571,20 @@ body {
   margin-bottom: 54px;
 }
 
-.index_content .content p {
+.content p {
   font-family: Roboto;
   font-size: 13px;
   line-height: 150%;
   color: #737373;
 }
 
-.index_content .content .text_container {
+.content .text_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.index_content .content .text_container .text {
+.content .text_container .text {
   margin: 0 15px;
 }
 
