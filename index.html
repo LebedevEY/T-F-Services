@@ -6,24 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Exo&family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Главная</title>
 </head>
 
-<body style="background-image: url(img/bg.png);">
+<body>
 
     <div class="index_header">
         <div class="menu">
-            <img src="img/logo.svg" alt="Logo" width="129">
+            <a href="index.html"><img class="logo" src="img/logo.svg" alt="Logo" width="129"></a>
 
             <ul class="menu_list">
                 <li class="menu_link"><a href="index.html">Home</a></li>
                 <li class="menu_link"><a href="about_us.html">About</a></li>
                 <li class="menu_link"><a href="shippers.html">Shippers</a></li>
-                <li class="menu_link"><a href="#">Transporation Services</a>
+                <li class="menu_link"><a href="#">Transportation Services</a>
                     <ul class="sub_menu">
                         <li class="sub_menu_link"><a href="flatbed.html">Flatbed</a></li>
                         <li class="sub_menu_link"><a href="dry_van.html">Dry Van</a></li>
@@ -50,7 +49,7 @@
                     <li class="menu_link"><a href="index.html">Home</a></li>
                     <li class="menu_link"><a href="about_us.html">About</a></li>
                     <li class="menu_link"><a href="shippers.html">Shippers</a></li>
-                    <li class="menu_link"><a href="#">Transporation Services</a>
+                    <li class="menu_link"><a href="#">Transportation Services</a>
                         <ul class="sub_menu">
                             <li class="sub_menu_link"><a href="flatbed.html">Flatbed</a></li>
                             <li class="sub_menu_link"><a href="dry_van.html">Dry Van</a></li>
@@ -59,7 +58,7 @@
                             <li class="sub_menu_link"><a href="ltl_services.html">LTL Services</a></li>
                             <li class="sub_menu_link"><a href="short_haul_services.html">Short Haul Services</a>
                             </li>
-                            <li class="sub_menu_link"><a href="high_value.html">High Value | Time Sensi</a></li>
+                            <li class="sub_menu_link"><a href="high_value.html">High Value | Time Sensitive</a></li>
                             <li class="sub_menu_link"><a href="conestoga.html">Conestoga</a></li>
                         </ul>
                     </li>
@@ -75,7 +74,7 @@
 
             <div>
                 <h2 class="header_h2">D&D United Corp.</h2>
-                <h1 class="header_h1">Transportion and Freight Services in Chicago, Il</h1>
+                <h1 class="header_h1">Transportation and Freight Services in Chicago, Il</h1>
             </div>
             <div class="header_form">
                 <form action="#">
@@ -87,10 +86,11 @@
                     <input class="input" type="tel" placeholder="Phone">
                     <button class="form_btn" type="submit">Next step</button>
                     <div class="accept">
-                        <input type="checkbox" required>
-                        <p class="accept_text"><a class="pp_link" href="#">I accept the terms and conditions of the
-                                Privacy
-                                Policy</a></p>
+                        <label class="switch">
+                            <input id="accept" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <label for="accept"><p class="accept_text">I accept the terms and conditions of the Privacy Policy</p></label>
                     </div>
                 </form>
             </div>

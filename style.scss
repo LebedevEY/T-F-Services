@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url("img/bg.png");
 }
 
 .container {
@@ -14,7 +15,7 @@ body {
 }
 
 .index_header {
-    background-image: url(img/header_bg.png);
+    background-image: url(img/header_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     max-height: 790px;
@@ -25,6 +26,10 @@ body {
         background-color: rgba(0, 0, 0, 0.65);
         justify-content: center;
         z-index: 10;
+
+        .logo {
+            margin-top: 15px;
+        }
 
         ul li:hover .sub_menu {
             display: block;
@@ -140,6 +145,10 @@ body {
                     text-transform: uppercase;
                     border-radius: 5px;
                     border-width: 0;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
 
                 .accept {
@@ -148,15 +157,74 @@ body {
                     margin: 0 auto;
                     padding-top: 24px;
 
-                    .pp_link {
-                        font-size: 11px;
-                        line-height: 150%;
-                        color: #737373;
-                        text-decoration: none;
-                    }
 
                     .accept_text {
                         padding-left: 10px;
+                        font-size: 11px;
+                        line-height: 150%;
+                        color: #737373;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    .switch {
+                        position: relative;
+                        display: flex;
+                        width: 35px;
+                        height: 22px;
+
+                        input {
+                            opacity: 0;
+                            width: 0;
+                            height: 0;
+
+                            &:checked + .slider {
+                                background-color: #6D010C;
+                            }
+                        }
+                    }
+
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            height: 18px;
+                            width: 18px;
+                            left: 2px;
+                            bottom: 50%;
+                            transform: translateY(50%);
+                            background-color: white;
+                            -webkit-transition: .4s;
+                            transition: .4s;
+                        }
+                    }
+
+                    input:focus + .slider {
+                        box-shadow: 0 0 1px #6D010C;
+                    }
+
+                    input:checked + .slider:before {
+                        transform: translateX(13px) translateY(50%);
+                    }
+
+                    .slider.round {
+                        border-radius: 34px;
+                    }
+
+                    .slider.round:before {
+                        border-radius: 50%;
                     }
                 }
             }
@@ -390,13 +458,17 @@ body {
 }
 
 .header {
-    background-image: url(img/Secondary/BG.png);
+    background-image: url(img/Secondary/BG.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 330px;
     background-color: #6D010C;
     position: relative;
     z-index: 2;
+
+    .logo {
+        margin-top: 15px;
+    }
 
     .menu {
         display: flex;
@@ -586,7 +658,6 @@ body {
     
         .tel_button {
             font-size: 14px;
-            font-weight: 120%;
             text-align: center;
             text-decoration: none;
             text-transform: uppercase;
@@ -669,9 +740,22 @@ body {
 
 @media (max-width: 1279px) {
 
+    .index_header {
+        display: flex;
+        flex-direction: column;
+
+        .menu {
+            justify-content: flex-end;
+        }
+    }
+
     .truck_box {
         flex-direction: column;
         align-items: center;
+    }
+
+    .review_image {
+        display: none;
     }
 }
 
